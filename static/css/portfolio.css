@@ -69,8 +69,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-size: 1.6rem;
-  background-color: #e4e6ef; }
+  font-size: 1.6rem; }
 
 a {
   text-decoration: none;
@@ -140,7 +139,7 @@ aside#side-nav {
       font-size: 1.6rem;
       line-height: 150%; }
       aside#side-nav footer i:hover {
-        color: #7E6D28; }
+        color: #987B02; }
     aside#side-nav footer p {
       font-size: 1.2rem; }
   @media all and (max-width: 640px) {
@@ -150,7 +149,8 @@ aside#side-nav {
 section#contents {
   padding-left: 150px;
   height: 100%;
-  color: #7E6D28; }
+  background-color: #FFFAE6;
+  color: #776D43; }
   @media all and (max-width: 640px) {
     section#contents {
       padding-left: 0; } }
