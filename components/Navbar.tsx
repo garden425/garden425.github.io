@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 const Navbar: React.FC = () => {
@@ -10,6 +9,7 @@ const Navbar: React.FC = () => {
       if (typeof window !== 'undefined') {
         const currentScrollY = window.scrollY;
         
+        // 최상단에서는 항상 표시, 그 외에는 스크롤 방향에 따라 제어
         if (currentScrollY < 50) {
           setIsVisible(true);
         } else if (currentScrollY > lastScrollY) {
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      const headerOffset = 80;
+      const headerOffset = 100; // 헤더 높이만큼 여백 확보
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
