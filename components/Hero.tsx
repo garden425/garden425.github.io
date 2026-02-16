@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Floating signature info */}
+        {/* Floating info */}
         <div className="absolute bottom-[-100px] right-0 md:right-20 flex flex-col items-end text-right opacity-30">
            <span className="text-[11px] font-bold tracking-[0.3em] uppercase text-gray-900 mb-1">Kim Jung Won</span>
            <span className="text-[9px] font-medium text-gray-500 uppercase tracking-widest">Digital Product Design</span>
