@@ -12,7 +12,7 @@ export const PROJECTS: Project[] = [
     overview: '채티는 사용자가 카카오톡 형식의 인터페이스를 통해 소설을 직접 작성하고, 독자는 대화를 읽듯 콘텐츠를 소비할 수 있는 채팅형 웹소설 서비스입니다.\n기존 텍스트 중심 웹소설의 진입 장벽을 낮추고, 누구나 쉽게 창작에 참여할 수 있도록 하는 것을 목표로 기획되었습니다.',
     role: 'Lead Product Designer',
     roleList: ['UI/UX Design', 'Web & App Design', 'Project Manage'],
-    imageUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMjQx/MDAxNzcxMjI2NDQ4NDkw.C10QUsi9uhR1qSyNw3WHXi7cQG6fOSAEgLbYxwmthPwg.WVVqkIoe5OI-ND6RsuMRSXtiuYq5e_9wGCLWRJZSPhUg.PNG/yammi_box.png?type=w966',
+    imageUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMTAz/MDAxNzcxMjI2NDQ3NjI2.LWBtnPZTQpTZErly8lKkMH3yTVU4fDWP2zt5j0pbPZkg.ipZLmpT6FsJ1xYsxZ7Fui-rJr1Jye4XAFGssi38xijkg.PNG/image.PNG?type=w966',
     mockupUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMTk5/MDAxNzcxMjI2OTE4NjIx.HmsVXbli5LqfC5AtsS33k4wT3gTbIg7GRkS5WleOZcQg.Q38_VofbwHRFzEBPjjAQ6k9nWZPvK0cTDHd94AI8CGog.PNG/Group_1597880417.png?type=w966',
     color: '#F4F4F5',
     problemTitle: '다가가기 힘든 소설의 장벽',
