@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useRef } from 'react';
 
 const Hero: React.FC = () => {
@@ -17,9 +16,21 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  // 중앙에서의 거리 계산 (0에 가까울수록 중앙)
+  const scrollToProjects = () => {
+    const element = document.getElementById('projects');
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const distFromCenter = Math.sqrt(Math.pow(mousePos.x - 0.5, 2) + Math.pow(mousePos.y - 0.5, 2));
-  // 중앙에 가까울수록 1에 수렴하는 값
   const focusFactor = Math.max(0, 1 - distFromCenter * 2.5);
 
   return (
@@ -28,28 +39,25 @@ const Hero: React.FC = () => {
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#e5e5e5] noise-bg select-none"
     >
-      {/* Background Decorative Blur */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <div className="absolute top-[20%] left-[15%] w-96 h-96 bg-gray-400/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-[20%] right-[15%] w-96 h-96 bg-gray-300/30 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-7xl px-10">
-        
-        {/* Top Label (Year removed as requested) */}
         <div className="absolute top-[-100px] left-0 md:left-20 flex flex-col items-start opacity-40">
            <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500">Selected Works</span>
         </div>
 
-        {/* Hello Text Layer with Bleeding Interaction */}
         <div className="relative flex flex-col items-center text-center">
-          <div className="relative mb-12">
-            {/* Base Text (Main focus) */}
-            <h1 className="text-[20vw] md:text-[15rem] font-serif-display font-medium tracking-tighter text-[#1a1a1a] leading-[0.8] z-30 transition-all duration-700">
+          <div 
+            className="relative mb-12 cursor-pointer group"
+            onClick={scrollToProjects}
+          >
+            <h1 className="text-[20vw] md:text-[15rem] font-serif-display font-medium tracking-tighter text-[#1a1a1a] leading-[0.8] z-30 transition-all duration-700 group-hover:scale-[1.02]">
               Hello
             </h1>
             
-            {/* Bleeding Layer 1: More active movement, follows mouse */}
             <h1 
               className="absolute inset-0 text-[20vw] md:text-[15rem] font-serif-display font-medium tracking-tighter text-[#1a1a1a] leading-[0.8] z-20 pointer-events-none transition-all duration-300 ease-out"
               style={{
@@ -61,7 +69,6 @@ const Hero: React.FC = () => {
               Hello
             </h1>
 
-            {/* Bleeding Layer 2: Deeper blur, counter movement */}
             <h1 
               className="absolute inset-0 text-[20vw] md:text-[15rem] font-serif-display font-medium tracking-tighter text-[#1a1a1a] leading-[0.8] z-10 pointer-events-none transition-all duration-500 ease-out"
               style={{
@@ -72,9 +79,12 @@ const Hero: React.FC = () => {
             >
               Hello
             </h1>
+            
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+               <span className="text-[10px] font-black tracking-[0.3em] text-gray-400 uppercase">Click to View Projects</span>
+            </div>
           </div>
 
-          {/* One-line Introduction Below Hello */}
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
             <p className="text-[12px] md:text-[14px] font-medium tracking-[0.1em] text-gray-400 max-w-lg leading-relaxed">
               사용자의 흐름을 이해하고 의미 있는 디지털 경험을 설계하는 <br className="hidden md:block" />
@@ -83,19 +93,12 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Metadata */}
         <div className="absolute bottom-[-100px] right-0 md:right-20 flex flex-col items-end text-right opacity-30">
            <span className="text-[11px] font-bold tracking-[0.3em] uppercase text-gray-900 mb-1">Kim Jung Won</span>
            <span className="text-[9px] font-medium text-gray-500 uppercase tracking-widest">Digital Product Design</span>
         </div>
-
-        {/* Sidebar Vertical Text */}
-        <div className="absolute left-[-15vw] top-1/2 -translate-y-1/2 -rotate-90 hidden xl:block opacity-10">
-           <span className="text-[10px] font-black tracking-[0.8em] uppercase text-gray-400">Interaction • Strategy • Visual</span>
-        </div>
       </div>
 
-      {/* Final Grain Overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.05] mix-blend-multiply bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
       <style>{`
