@@ -45,10 +45,6 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-7xl px-10">
-        <div className="absolute top-[-100px] left-0 md:left-20 flex flex-col items-start opacity-40">
-           <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500">Selected Works</span>
-        </div>
-
         <div className="relative flex flex-col items-center text-center">
           <div 
             className="relative mb-12 cursor-pointer group"
@@ -79,10 +75,6 @@ const Hero: React.FC = () => {
             >
               Hello
             </h1>
-            
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-               <span className="text-[10px] font-black tracking-[0.3em] text-gray-400 uppercase">Click to View Projects</span>
-            </div>
           </div>
 
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
