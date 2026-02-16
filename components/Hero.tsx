@@ -39,6 +39,7 @@ const Hero: React.FC = () => {
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#e5e5e5] noise-bg select-none"
     >
+      {/* Background glow effects */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <div className="absolute top-[20%] left-[15%] w-96 h-96 bg-gray-400/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-[20%] right-[15%] w-96 h-96 bg-gray-300/30 rounded-full blur-[120px]" />
@@ -46,6 +47,7 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-7xl px-10">
         <div className="relative flex flex-col items-center text-center">
+          {/* Main Title Area */}
           <div 
             className="relative mb-12 cursor-pointer group"
             onClick={scrollToProjects}
@@ -54,6 +56,7 @@ const Hero: React.FC = () => {
               Hello
             </h1>
             
+            {/* Dynamic Shadow Layer 1 */}
             <h1 
               className="absolute inset-0 text-[20vw] md:text-[15rem] font-serif-display font-medium tracking-tighter text-[#1a1a1a] leading-[0.8] z-20 pointer-events-none transition-all duration-300 ease-out"
               style={{
@@ -65,6 +68,7 @@ const Hero: React.FC = () => {
               Hello
             </h1>
 
+            {/* Dynamic Shadow Layer 2 */}
             <h1 
               className="absolute inset-0 text-[20vw] md:text-[15rem] font-serif-display font-medium tracking-tighter text-[#1a1a1a] leading-[0.8] z-10 pointer-events-none transition-all duration-500 ease-out"
               style={{
@@ -77,6 +81,7 @@ const Hero: React.FC = () => {
             </h1>
           </div>
 
+          {/* Intro Text */}
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
             <p className="text-[12px] md:text-[14px] font-medium tracking-[0.1em] text-gray-400 max-w-lg leading-relaxed">
               사용자의 흐름을 이해하고 의미 있는 디지털 경험을 설계하는 <br className="hidden md:block" />
@@ -85,12 +90,14 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
+        {/* Floating signature info */}
         <div className="absolute bottom-[-100px] right-0 md:right-20 flex flex-col items-end text-right opacity-30">
            <span className="text-[11px] font-bold tracking-[0.3em] uppercase text-gray-900 mb-1">Kim Jung Won</span>
            <span className="text-[9px] font-medium text-gray-500 uppercase tracking-widest">Digital Product Design</span>
         </div>
       </div>
 
+      {/* Grain texture overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.05] mix-blend-multiply bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
       <style>{`
