@@ -64,12 +64,12 @@ const Navbar: React.FC = () => {
             </div>
           </div>
           
-          <button 
-            onClick={() => window.location.href = 'mailto:wjd7569@naver.com'}
-            className="text-[11px] font-black bg-gray-900 text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-all uppercase tracking-widest"
+          <a 
+            href="mailto:wjd7569@naver.com"
+            className="text-[11px] font-black bg-gray-900 text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-all uppercase tracking-widest inline-block"
           >
             Hire Me
-          </button>
+          </a>
         </div>
       </div>
     </nav>

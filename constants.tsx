@@ -1,4 +1,3 @@
-
 import { Project, Tool } from './types';
 
 export const PROJECTS: Project[] = [
@@ -13,8 +12,8 @@ export const PROJECTS: Project[] = [
     overview: '채티는 사용자가 카카오톡 형식의 인터페이스를 통해 소설을 직접 작성하고, 독자는 대화를 읽듯 콘텐츠를 소비할 수 있는 채팅형 웹소설 서비스입니다.\n기존 텍스트 중심 웹소설의 진입 장벽을 낮추고, 누구나 쉽게 창작에 참여할 수 있도록 하는 것을 목표로 기획되었습니다.',
     role: 'Lead Product Designer',
     roleList: ['UI/UX Design', 'Web & App Design', 'Project Manage'],
-    imageUrl: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop',
-    mockupUrl: 'https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMTAz/MDAxNzcxMjI2NDQ3NjI2.LWBtnPZTQpTZErly8lKkMH3yTVU4fDWP2zt5j0pbPZkg.ipZLmpT6FsJ1xYsxZ7Fui-rJr1Jye4XAFGssi38xijkg.PNG/image.PNG?type=w966',
+    mockupUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMTk5/MDAxNzcxMjI2OTE4NjIx.HmsVXbli5LqfC5AtsS33k4wT3gTbIg7GRkS5WleOZcQg.Q38_VofbwHRFzEBPjjAQ6k9nWZPvK0cTDHd94AI8CGog.PNG/Group_1597880417.png?type=w966',
     color: '#F4F4F5',
     problemTitle: '다가가기 힘든 소설의 장벽',
     problemText: "기존 소설 앱들은 ‘읽는 행위’에 집중되어 있어, 콘텐츠에 진입하기까지의 진입 장벽이 높다고 느꼈습니다. 반면 많은 사용자가 하루에도 수십 번 메신저를 확인하며 대화를 소비한다는 점에 주목했고, 익숙한 채팅 경험 자체를 이야기 전달 방식으로 활용하면 소설을 더 가볍고 몰입감 있게 즐길 수 있지 않을까라는 문제의식에서 chatie를 기획하게 되었습니다.\n\nchatie는 독자가 소설을 ‘읽는다’기보다 대화를 엿보듯 자연스럽게 따라가며 체험하도록 만드는 데 초점을 둔 서비스입니다.",
@@ -44,8 +43,8 @@ export const PROJECTS: Project[] = [
     overview: 'Yammi는 학식을 먹기 위해 길게 줄 서야 하는 불편함에서 출발한 학식 주문 앱입니다. 직접 학교를 돌아다니며 학생들의 이용 패턴과 불만을 듣고, 이를 해결하기 위해 학교 측과 운영 방식도 함께 조율했습니다. 수업 전이나 이동 중 미리 주문하고 준비 완료 알림을 받아 바로 픽업할 수 있도록 설계해, 바쁜 캠퍼스 생활 속 식사 경험을 한층 편하게 만들었습니다.',
     role: 'Lead Product Designer',
     roleList: ['UI/UX Design', 'Visual Design', 'Project Planning', 'SNS Marketing'],
-    imageUrl: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=1600',
-    mockupUrl: 'https://images.unsplash.com/photo-1512428559083-a40ce903395b?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMjQx/MDAxNzcxMjI2NDQ4NDkw.C10QUsi9uhR1qSyNw3WHXi7cQG6fOSAEgLbYxwmthPwg.WVVqkIoe5OI-ND6RsuMRSXtiuYq5e_9wGCLWRJZSPhUg.PNG/yammi_box.png?type=w966',
+    mockupUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfOTAg/MDAxNzcxMjI2OTEzNjA1.7zctfukUHieL9j6sylvYuD5ht4BtJTgPdQOEqWTfEtwg._dy3kz_PrDiq03NgjILxTuhms5nwxTgkMBugSoV5NdAg.PNG/Group_1597880418.png?type=w966',
     color: '#E0F2FE',
     problemTitle: '반복되는 대기에서 시작된 질문',
     problemText: 'Yammi는 점심시간마다 반복되는 긴 대기 줄과 혼잡한 동선에서 출발했습니다. 많은 학생들이 식사를 위해 상당한 시간을 소비하고 있었고, 이는 바쁜 학업 일정 속에서 불편함으로 이어지고 있었습니다. 이미 대부분의 소비가 모바일 환경에서 이루어지고 있음에도 학식 주문만은 오프라인 방식에 머물러 있다는 점에 주목했습니다. 학생들의 실제 이용 패턴을 직접 관찰하고 의견을 수집하며 문제를 구체화했고, 학교 측과의 논의를 통해 보다 효율적인 주문 구조를 설계하고자 Yammi를 기획하게 되었습니다.',
@@ -75,8 +74,8 @@ export const PROJECTS: Project[] = [
     overview: 'myrics는 빠르게 성장하는 중화권 디지털 콘텐츠 시장을 겨냥해 기획된 웹소설 플랫폼입니다. 단순히 번역 콘텐츠를 제공하는 방식이 아니라, 현지 독자의 소비 패턴과 UI 사용 습관을 분석해 서비스 구조를 설계했습니다. 장르 선호도, 회차 소비 방식, 과금 흐름 등 중화권 플랫폼의 특징을 반영해 콘텐츠 탐색부터 결제까지의 흐름을 최적화했으며, 모바일 중심 환경에 맞춘 직관적인 인터페이스를 구축했습니다. 이를 통해 글로벌 확장 가능성을 고려한 웹소설 서비스 모델을 제안했습니다.',
     role: 'Lead Product Designer',
     roleList: ['UI/UX Design', 'Project Planning'],
-    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=1600',
-    mockupUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop',
+    imageUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMTM0/MDAxNzcxMjI2NDUwMzIx.N3PWsl86LcGl4ddAILtQ58TQWCMmFceXdS5g9THdE3gg.Ntdf419QdOPx5fuRX4x6w1bd9GuyGPmyBb9EjxKE5PUg.PNG/myrics_box.png?type=w966',
+    mockupUrl: 'https://postfiles.pstatic.net/MjAyNjAyMTZfMTQ4/MDAxNzcxMjI2OTIyODY3.wg36tji6gb2euZEumY3BRMf-DgOwK8yIOoIYpzHJQhEg.2ky8zFbsuY_CFaIuwBkPpS1UVZ6-fwYlRfuHAYJPZTwg.PNG/Group_1597880419.png?type=w966',
     color: '#FEE2E2',
     problemTitle: '현지화되지 않은 글로벌 웹소설 서비스의 한계',
     problemText: '기존 글로벌 웹소설 플랫폼은 단순 번역 중심의 콘텐츠 제공 방식에 머물러 있어, 중화권 독자의 콘텐츠 소비 습관과 이용 환경을 충분히 반영하지 못하고 있었습니다. 독서 흐름, 회차 소비 방식, 과금 구조 등에서 발생하는 문화적 차이로 인해 사용자 경험에 이질감이 발생했으며, 이는 콘텐츠 탐색부터 결제까지 이어지는 이용 흐름의 비효율로 이어졌습니다. 특히 모바일 사용 비중이 높은 환경임에도 불구하고 이에 최적화된 UI가 부족해, 사용자 진입과 지속적인 이용을 유도하는 데 한계가 존재했습니다.',

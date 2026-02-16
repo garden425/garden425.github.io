@@ -1,11 +1,6 @@
-
 import React from 'react';
 
 const Contact: React.FC = () => {
-  const handleEmailClick = () => {
-    window.location.href = 'mailto:wjd7569@naver.com';
-  };
-
   return (
     <section id="contact" className="py-48 bg-white px-6 relative overflow-hidden">
       {/* Texture */}
@@ -26,15 +21,15 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        <button 
-          onClick={handleEmailClick}
-          className="group relative px-6 py-2.5 border border-gray-900/20 rounded-full overflow-hidden transition-all duration-500 hover:border-gray-900 hover:bg-gray-900"
+        <a 
+          href="mailto:wjd7569@naver.com"
+          className="group relative inline-block px-6 py-2.5 border border-gray-900/20 rounded-full overflow-hidden transition-all duration-500 hover:border-gray-900 hover:bg-gray-900"
         >
           <span className="relative z-10 text-[13px] font-semibold tracking-normal text-gray-900 group-hover:text-white transition-colors duration-500">
             wjd7569@naver.com
           </span>
           <div className="absolute inset-0 bg-gray-900 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
-        </button>
+        </a>
 
         <div className="mt-40 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-gray-100 pt-12">
           <div>
@@ -48,7 +43,6 @@ const Contact: React.FC = () => {
             <h4 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Location</h4>
             <p className="text-sm font-bold">Seoul, South Korea</p>
           </div>
-          {/* 저작권 텍스트는 푸터로 이동되었습니다 */}
         </div>
       </div>
     </section>
